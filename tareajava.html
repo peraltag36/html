@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascipt">
+        alert( medios de transporte);
+    </script>
+</head>
+
+<body>
+    <script>
+        var metros;
+
+        metros = prompt('Ingrese un valor de distancia en metro a recorrer con numero:', '');// parseInt > para que el operador ingrese la distancia a recorrer en valores numéricos ingresados por teclado
+
+        if (metros <= 1000) {
+            document.write('el medio de transporte a utilizar es a pie');
+        }
+        else
+            if (metros >= 1000 && metros <= 10000) {
+                document.write('el medio de transporte a utilizar es bicicleta');
+            }
+            else {
+                if (metros >= 10000 && metros <=30000) {
+                    document.write('el medio de transporte a utilizar es colectivo');
+                }
+                else {
+                    if (metros >= 30000 && metros <= 100000) {
+                        document.write('el medio de transporte a utilizar es auto');
+                    } else {
+                        if (metros >= 100000) {
+                            document.write('el medio de transporte a utilizar es avion');
+                        }
+                    }
+                }
+            }
+    </script>
+
+</body>
+
+</html>
